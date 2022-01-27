@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 70%;
+  margin: 40px auto;
+  padding: 20px;
+}
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.left-txt {
+  text-align: start;
+  font-size: 18px;
+  width: 400px;
+}
+
+.normal-txt {
+  font-weight: 100;
+}
+
+.booking-form2 .row {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  flex-direction: row;
+  justify-content: center;
+ min-width: 100%;
+  /* padding-left: 8px; */
+  /* margin-left: auto; */
+  gap: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.row-New {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-gap: 59px;
+  gap: 10px;
+   min-width: 100%;
+
+}
+
+.row-Ads {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  flex-direction: row;
+  justify-content: center;
+ min-width: 100%;
+  /* padding-left: 8px; */
+  /* margin-left: auto; */
+  gap: 90px;
+  margin-top:-40px ;
+  /* padding-top: -15px; */
+  /* margin-bottom: 20px; */
+}
+
+
+
+
+/* .row-New {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  grid-gap: 59px;
+  gap: 10px;
+  min-width: 1500px;
+
+} */
+
+ul {
+  width: max-content;
+  padding-inline-start: 0px;
+}
+
+.form-style-1 {
+  margin: 10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.form-style-1 label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+.form-style-1 input[type="text"],
+.form-style-1 input[type="date"],
+.form-style-1 input[type="datetime"],
+.form-style-1 input[type="number"],
+.form-style-1 input[type="search"],
+.form-style-1 input[type="time"],
+.form-style-1 input[type="url"],
+.form-style-1 input[type="email"],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.form-style-1 input[type="text"]:focus,
+.form-style-1 input[type="date"]:focus,
+.form-style-1 input[type="datetime"]:focus,
+.form-style-1 input[type="number"]:focus,
+.form-style-1 input[type="search"]:focus,
+.form-style-1 input[type="time"]:focus,
+.form-style-1 input[type="url"]:focus,
+.form-style-1 input[type="email"]:focus,
+.form-style-1 textarea:focus,
+.form-style-1 select:focus {
+  -moz-box-shadow: 0 0 8px #88d5e9;
+  -webkit-box-shadow: 0 0 8px #88d5e9;
+  box-shadow: 0 0 8px #88d5e9;
+  border: 1px solid #88d5e9;
+}
+.form-style-1 .field-divided {
+  width: 49%;
+}
+
+.form-style-1 .field-long {
+  width: 100%;
+}
+.form-style-1 .field-select {
+  width: 100%;
+}
+.form-style-1 .field-textarea {
+  height: 100px;
+}
+.form-style-1 input[type="submit"],
+.form-style-1 input[type="button"] {
+  background: #4b99ad;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.form-style-1 input[type="submit"]:hover,
+.form-style-1 input[type="button"]:hover {
+  background: #4691a4;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.form-style-1 .required {
+  color: red;
+}

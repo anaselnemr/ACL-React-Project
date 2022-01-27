@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
+
+
+.headline {
+  position: relative;
+  height: 325px;
+  color: #fff;
+  text-align: center;
+  /* background: url("http://placekitten.com/200") no-repeat center center; */
+  background-size: cover;
+  /* animation: animationimage 4s infinite forwards ; */
+}
+
+.headline:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+          animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+.inner h1 {
+  margin: 0;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.inner p {
+  margin: 0;
+  font-size: 1.4em;
+  font-style: italic;
+  font-family: serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav.scrolled {
+  background: rgba(17, 17, 17, 0);
+}
+nav ul {
+  float: right;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+nav li {
+  float: left;
+}
+nav a {
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+nav a:hover {
+  color: #ededed;
+}
+
+nav .logo {
+  height: 130px;
+  /* width: 75px; */
+  content: url('https://i.ibb.co/WF15sbf/150d1a074a5848b189f739680d1a97ca-2-removebg-preview.png');
+  float: left;
+}
+.logo:before, .logo:after {
+  position: absolute;
+  font-size: 7em;
+  font-weight: 300;
+  line-height: 0;
+  color: #fff;
+  top: 25px;
+}
+.logo:before {
+    size: 10px;
+  
+  left: 20px;
+}
+.logo:after {
+  /* content:  url('https://i.ibb.co/0q5z6Jv/e0f7973e78414b2bb23ad01e5f3a88bb-removebg-preview.png'); */
+  left: 34px;
+}
+
+section {
+  width: 100%;
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 800px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+}
+/* .textNext {
+    margin: 0;
+  font-size: 4em;
+  line-height: 1.2em;
+    width: 100%;
+    margin: 25px auto;
+    padding: 20px;
+  } */
+  .textNext.expand {
+    width: 100%;
+  }
+
+  .textNext a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 55px;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+      font-weight: 600;
+  }
+
+  .textNext2.expand {   
+    width: 100%;
+  }
+
+  .textNext2 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    padding: 1rem 0;
+    /* font-weight: 200; */
+    text-decoration: underline;
+  }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* defines the animation */
+
+
+  
+  @keyframes animation {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    10% {
+       
+        opacity: 0;
+        /* transform: translate3d(0, 60%, 0); */
+    }
+
+    70% {
+        opacity: 1;
+    }
+  
+    100% {
+        opacity: 1;
+       
+    }
+  }
+  /* .a {  // for both titles animated
+    opacity: 0;
+    animation: animation 4s infinite forwards alternate;
+  } */
+  a.first {
+    opacity: 0;
+    animation: animation 4s infinite forwards alternate;
+    -webkit-animation-delay: 0.5s;
+     animation-delay: 0.5s;
+  }
+ 
+  /* now add general css for page */
+ 
+  @keyframes animationimage {
+    0% {
+        opacity: 1;
+        transform:scale(2, 0.5);;
+    }
+    10% {
+       
+        opacity: 0;
+        /* transform: translate3d(0, 60%, 0); */
+    }
+
+    70% {
+        /* transform:scale(6, 2);; */
+        opacity: 1;
+        
+    }
+  
+    100% {
+        opacity: 1;
+       
+    }
+  }
+  /* .body{
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+} */
+ 
+  
+

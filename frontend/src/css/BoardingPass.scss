@@ -1,0 +1,382 @@
+$content_width: 85%;
+
+
+
+h1 {
+	color: #ccc;
+	font-weight: 200;
+	font-size: 2.1em;
+	margin: 0px;
+}
+
+h2 {
+	color: rgb(255, 255, 255);
+	opacity: 1;
+  font-weight: 500;
+	font-size: 12px !important;
+	margin: 0px;
+}
+
+h3 {
+	color: #ccc;
+	opacity: 1;
+	font-weight: 500;
+	font-size: 15px;
+	margin: 0px;
+}
+
+.cards_wrapper {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.card {
+	width: 320px;
+	border-radius: 20px;
+	background: #4d1532;
+	display: inline-block;
+	margin: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.4);
+	
+	img {
+		width: 100%;
+	}
+  
+  .inner {
+    position:absolute;
+    width:320px; 
+    height: 100%;
+    z-index:1;
+    opacity:0.1;
+    background-image: url(https://puu.sh/rE78K/33424202f7.svg);
+    background-size:130px;
+    background-repeat:repeat-y;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+      @keyframes animatedBackground {
+        from { 
+          background-position: 100% -10px;
+        }
+        to { 
+          background-position: 0% -10px; }
+        }
+    }
+	
+	&_logo {
+	  background: #ffffff;
+		border-radius: 20px 20px 0 0;
+    
+		img.qatar {
+		
+			text-align: center;
+			width: 60%;
+		}
+    img.tigerair {
+			margin-top: 10px;
+			text-align: center;
+			width: 45%;
+     
+		}
+    img.airasia {
+			margin: -10px;
+			text-align: center;
+			width: 35%;
+		}
+	}
+	
+	&_heading {
+		
+		h2 {
+			padding-top:20px;
+			text-align: center;
+		}
+	}
+	
+	&_thumbnail {
+		min-height: 150px;
+		margin-top: 10px;
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	&_trip {
+		text-align: center;
+		width: $content_width;
+		margin: 30px auto;
+		display: flex;
+		height: 72px;
+		
+		div {
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			
+			h1 {
+				margin: 0px;
+			}
+			
+			h2 {
+				margin: 0px;
+				letter-spacing: 2px;
+			}
+			
+			&.trip_from {
+				text-align: left;
+				width: 35%;
+				
+				h2 {
+					padding-left: 2px;
+				}
+			}
+			
+			&.trip_icon {
+				width: 30%;
+				
+				img {
+					padding-top: 20px;
+					opacity: 1;
+					width: 25px;
+				}
+			}
+			
+			&.trip_to {
+				text-align: right;
+				width: 35%;
+				
+				h2 {
+					padding-right: 3px;
+				}
+			}
+		}
+	}
+  
+  &_departure {
+    margin: -20px auto 32px;
+    
+    div {
+      color: #ccc;
+    }
+  }
+	
+	&_divider {
+		position: relative;
+		width: 100%;
+		
+		.divider_left {
+			left: -15px;
+		}
+		
+		.divider_hole {
+			position: absolute;
+			top: -12px;
+			padding: 0px;
+			height: 25px;
+			width: 25px;
+			border-radius: 100%;
+			background: #c5d8e6;
+      // box-shadow: inset 0 3px 10px 0 rgba(0,0,0,.4);
+		}
+		
+		.divider {
+			width: $content_width;
+			margin: auto;
+			height: 2px;
+			background: linear-gradient(to right, #c5d8e6 50%, transparent 50%);
+ 			background-size: 10px 8px, 100% 2px;
+			opacity: .2;
+		}
+		
+		.divider_right {
+			right: -15px;
+		}
+	}
+	
+  &_flight_details {
+    h2 {
+      font-size: .7em;
+    }
+    
+    .card {
+      &_seating {
+        width: $content_width;
+        margin: 30px auto;
+        display: flex;
+
+        div {
+          display: inline-block;
+          width: 50%;
+
+          &.seating_passenger {
+            text-align: left;
+          }
+
+          &.seating_passenger_dos {
+            text-align: left;
+            padding-left: 32px;
+          }
+
+          &.seating_seat {
+            text-align: right;
+          }
+        }
+      }
+
+      &_details {
+        width: $content_width;
+        margin: 30px auto;
+        display: flex;
+        // padding-bottom: 30px;
+
+        div {
+          display: inline-block;
+          width: 33%;
+
+          &.details_flight {
+            text-align: left;
+          }
+
+          &.details_date {
+            text-align: center;
+          }
+
+          &.details_time {
+            text-align: right;
+          }
+        }
+      }
+
+      &_details_continued {
+        width: $content_width;
+        margin: 30px auto;
+        display: flex;
+        padding-bottom: 30px;
+
+        div {
+          display: inline-block;
+          width: 33%;
+
+          &.details_flight {
+            text-align: left;
+          }
+
+          &.details_date {
+            text-align: center;
+          }
+
+          &.details_time {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  
+  .card {
+      &_seating {
+        width: $content_width;
+        margin: 30px auto;
+        display: flex;
+
+        div {
+          display: inline-block;
+          width: 50%;
+
+          &.seating_passenger {
+            text-align: left;
+          }
+
+          &.seating_passenger_dos {
+            text-align: left;
+            padding-left: 32px;
+          }
+
+          &.seating_seat {
+            text-align: right;
+          }
+        }
+      }
+
+      &_details {
+        width: $content_width;
+        margin: 30px auto;
+        display: flex;
+        // padding-bottom: 30px;
+
+        div {
+          display: inline-block;
+          width: 33%;
+
+          &.details_flight {
+            text-align: left;
+          }
+
+          &.details_date {
+            text-align: center;
+          }
+
+          &.details_time {
+            text-align: right;
+          }
+        }
+      }
+
+      &_details_continued {
+        width: $content_width;
+        margin: 30px auto;
+        display: flex;
+        padding-bottom: 30px;
+
+        div {
+          display: inline-block;
+          width: 33%;
+
+          &.details_flight {
+            text-align: left;
+          }
+
+          &.details_date {
+            text-align: center;
+          }
+
+          &.details_time {
+            text-align: right;
+          }
+        }
+      }
+    }
+}
+
+.ta-theme {
+  background: #b26a07;
+  
+  .card_logo {
+   
+    border-top: 5px solid #F69E25;
+  }
+}
+
+.aa-theme {
+  background: #72274D;
+  
+  .card_logo {
+    border-top: 5px solid #72274D;
+  }
+}
+
+.qr-theme {
+  background: #1b2f6e;
+  //23419b
+  
+  .card_logo {
+    border-top: 5px solid #23419b;
+  }
+
+  
+}
+.center-boarding{
+  margin-right: 10px;
+}

@@ -96,5 +96,4 @@ Fly Nawww was built as the capstone for **Advanced Computer Lab (ACL)**, a senio
 
 ## Authors
 
-- **Anas ElNemr**
-- **Ahmed Eltawel**
+Anas ElNemr  ·  Ahmed Eltawel
